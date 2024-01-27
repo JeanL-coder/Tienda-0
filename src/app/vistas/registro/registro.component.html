@@ -1,1 +1,31 @@
-<p>registro works!</p>
+
+<body>
+  <div class="formulario">
+    <h1>Crear cuenta</h1>
+    <form (ngSubmit)="onSubmit()">
+      <div class ="username">
+        <input type="text" required>
+        <label>Nombre</label>
+      </div>
+      <div class ="username">
+        <input type="text" required>
+        <label>Apellido</label>
+      </div>
+      <div class ="username">
+        <input type="email" id="email" name="email" [(ngModel)]="userEmail"required>
+        <div *ngIf="emailInvalid" class="error">Ingrese un correo electrónico válido.</div>
+        <label>Correo Electrónico</label>
+      </div>
+      <div class ="username">
+        <input type="text" required>
+        <label>Favor indicar contraseña</label>
+      </div>
+      <div class ="username">
+        <input type="password" id="password" name="password" [(ngModel)]="userPassword" required>
+        <div *ngIf="passwordInvalid" class="error">La contraseña debe tener al menos 5 caracteres, incluir letras mayúsculas, minúsculas y números.</div>
+        <label>Favor confirmar contraseña</label>
+      </div>
+      <button class="Iniciar_btn">Someter</button>
+    </form>
+  </div>
+</body>
