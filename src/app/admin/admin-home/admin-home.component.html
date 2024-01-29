@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TiendaO</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <mat-toolbar color="primary">
+        <h1>Tienda-0</h1>
+        <span class="spacer"></span>
+        <span>Carlos Olivera - Produc Manager</span>
+    </mat-toolbar>
+
+    <main class="dashboard">
+        <section class="dashboard-metrics">
+            <mat-card class="metric-card">
+                <mat-card-header>
+                    <mat-card-title>Total Sales</mat-card-title>
+                    <mat-card-subtitle>21,324</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+            <mat-card class="metric-card">
+                <mat-card-header>
+                    <mat-card-title>Total Income</mat-card-title>
+                    <mat-card-subtitle>$221,324.50</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+            <mat-card class="metric-card">
+                <mat-card-header>
+                    <mat-card-title>Total Visits</mat-card-title>
+                    <mat-card-subtitle>16,703</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+            <mat-card class="metric-card">
+                <mat-card-header>
+                    <mat-card-title>Conversion Rate</mat-card-title>
+                    <mat-card-subtitle>12.8%</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </section>
+        <section class="sales-performance">
+            <!-- Insert chart component here -->
+        </section>
+        <section class="popular-categories">
+            <!-- Insert pie chart component here -->
+        </section>
+        <section class="recent-customers">
+            <header>
+                <h2>Recent Customers</h2>
+            </header>
+            <mat-table [dataSource]="dataSource">
+                <!-- Define columns for recent customers here -->
+            </mat-table>
+        </section>
+    </main>
+</body>

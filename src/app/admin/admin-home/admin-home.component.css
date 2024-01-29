@@ -1,0 +1,46 @@
+mat-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    background: #cfb2b2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    padding-top: 64px;
+}
+
+.spacer {
+    flex:1 1 auto;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 16px;
+}
+
+.dashboard-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.metric-card {
+    padding: 16px;
+    text-align: center;
+}
+
+.sales-performance, .popular-categories {
+    grid-column: span 3;
+}
+
+.recent-costumers {
+    grid-column: span 3;
+    /* Insert table style */
+}
