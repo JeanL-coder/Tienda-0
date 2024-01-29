@@ -1,0 +1,31 @@
+<body>
+    <p>products works!</p>
+
+    <section class="product-list">
+    <h2>Gestión de Productos</h2>
+    <button (click)="onAddProduct">Añadir Productos</button>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ product.id }}</td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.price }}</td>
+                <td>{{ product.quantity }}</td>
+                <td>
+                    <button (click)="onEditProduct(product)">Editar</button>
+                    <button (click)="onDeleteProduct(product.id)">Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+</body>
